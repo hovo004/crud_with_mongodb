@@ -7,7 +7,7 @@ import carsRoute from './route/carsRoute.js';
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
-const MONGODB_URL = process.env.MONGODB_URL;
+const MONGODB_URL = process.env.MONGODB_URI;
 
 app.use(express.json());
 app.use(isValisJson);
